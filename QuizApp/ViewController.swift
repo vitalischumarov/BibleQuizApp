@@ -16,7 +16,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         customButtonDesign()
     }
-
+    
+    @IBAction func startButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToQuiz", sender: self)
+    }
+    
     //MARK: - change the design of the button
     func customButtonDesign() {
         startButton.layer.cornerRadius = 20

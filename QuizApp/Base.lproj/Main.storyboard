@@ -32,6 +32,9 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Yn-I8-fi6"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Highscore:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isN-an-9BF">
                                 <rect key="frame" x="63" y="260" width="277" height="21"/>
@@ -46,11 +49,28 @@
                     </view>
                     <connections>
                         <outlet property="startButton" destination="CMt-L5-lRy" id="RUP-Cv-0fS"/>
+                        <segue destination="IsF-zj-oQn" kind="presentation" identifier="goToQuiz" modalPresentationStyle="fullScreen" id="Bd5-gq-HhJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="69.642857142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WvG-eB-z1e">
+            <objects>
+                <viewController id="IsF-zj-oQn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3lM-av-mug">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xiD-Qq-krq"/>
+                        <color key="backgroundColor" red="0.1960422695" green="0.67689764500000005" blue="0.90089762210000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aH5-FV-B6v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdN-RO-pVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="987" y="70"/>
         </scene>
     </scenes>
     <resources>
