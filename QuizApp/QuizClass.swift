@@ -21,6 +21,4 @@ class QuizClass {
         answer3 = _answer3
         solution = _solution
     }
-    
-    
 }
