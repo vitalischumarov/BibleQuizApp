@@ -7,6 +7,8 @@
 
 import UIKit
 
+let defaults = UserDefaults.standard
+
 class SecondViewController: UIViewController {
 
     //MARK: - IBM Outlets
@@ -70,10 +72,33 @@ class SecondViewController: UIViewController {
     //MARK: - End alert
     func gameOverAlert() {
         let alert = UIAlertController(title: "The game is over", message: "Your score is \(score)! Do you want so save it?", preferredStyle: .alert)
-        let actionSave = UIAlertAction(title: "save", style: .default, handler: nil)
-        let actionStop = UIAlertAction(title: "break", style: .default, handler: nil)
+        let actionSave = UIAlertAction(title: "Save", style: .default) {action in
+            self.saveData()
+        }
+        let actionStop = UIAlertAction(title: "No", style: .default) { (action) in
+            self.dismiss(animated: true)
+        }
         alert.addAction(actionSave)
         alert.addAction(actionStop)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    //MARK: - SaveDate
+    func saveData() {
+        let alert = UIAlertController(title: "Save date", message: "please enter your name", preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = "please enter your name"
+        }
+        let actionSave = UIAlertAction(title: "Save", style: .default) { action in
+            if let username = alert.textFields![0].text {
+                defaults.set("Name: \(username)", forKey: "name")
+                let scoreAsString = String(self.score)
+                defaults.set("Score: \(scoreAsString)", forKey: "score")
+                
+                self.dismiss(animated: true)
+            }
+        }
+        alert.addAction(actionSave)
         self.present(alert, animated: true, completion: nil)
     }
     

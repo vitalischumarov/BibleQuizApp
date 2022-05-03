@@ -18,6 +18,7 @@
 		910FB4E82820263400C49471 /* QuizAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910FB4E72820263400C49471 /* QuizAppUITestsLaunchTests.swift */; };
 		91D4B4FB28207186004FF85A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4B4FA28207186004FF85A /* SecondViewController.swift */; };
 		91D4B4FD2820736C004FF85A /* QuizClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D4B4FC2820736C004FF85A /* QuizClass.swift */; };
+		91F23E412821591B00FE853A /* UsernameProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F23E402821591B00FE853A /* UsernameProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		910FB4E72820263400C49471 /* QuizAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		91D4B4FA28207186004FF85A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		91D4B4FC2820736C004FF85A /* QuizClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizClass.swift; sourceTree = "<group>"; };
+		91F23E402821591B00FE853A /* UsernameProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				910FB4C62820263200C49471 /* SceneDelegate.swift */,
 				910FB4C82820263200C49471 /* ViewController.swift */,
 				910FB4CA2820263200C49471 /* Main.storyboard */,
+				91F23E402821591B00FE853A /* UsernameProtocol.swift */,
 				91D4B4FC2820736C004FF85A /* QuizClass.swift */,
 				91D4B4FA28207186004FF85A /* SecondViewController.swift */,
 				910FB4CD2820263400C49471 /* Assets.xcassets */,
@@ -267,6 +270,7 @@
 				91D4B4FB28207186004FF85A /* SecondViewController.swift in Sources */,
 				91D4B4FD2820736C004FF85A /* QuizClass.swift in Sources */,
 				910FB4C92820263200C49471 /* ViewController.swift in Sources */,
+				91F23E412821591B00FE853A /* UsernameProtocol.swift in Sources */,
 				910FB4C52820263200C49471 /* AppDelegate.swift in Sources */,
 				910FB4C72820263200C49471 /* SceneDelegate.swift in Sources */,
 			);
